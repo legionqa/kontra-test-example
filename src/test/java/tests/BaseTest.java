@@ -6,6 +6,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.PageGenerator;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -18,7 +19,12 @@ public class BaseTest {
     @BeforeEach
     public void classLevelSetup() {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        // Create a new instance of the ChromeOptions class
+        ChromeOptions options = new ChromeOptions();
+
+        // Set Chrome to run in headless mode
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         page = new PageGenerator(driver);
     }
