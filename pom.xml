@@ -77,10 +77,10 @@
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
                     <properties>
-                        <property>
-                            <name>listener</name>
-                            <value>io.qameta.allure.junit5.AllureJunit5</value>
-                        </property>
+<!--                        <property>-->
+<!--                            <name>listener</name>-->
+<!--                            <value>io.qameta.allure.junit5.AllureJunit5</value>-->
+<!--                        </property>-->
                     </properties>
                     <includes>
                         <include>**/tests/**.java</include>
