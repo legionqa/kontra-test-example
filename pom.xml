@@ -11,8 +11,8 @@
     <properties>
         <java.version>11</java.version>
         <selenium.version>4.9.0</selenium.version>
-        <junit.jupiter.version>5.9.2</junit.jupiter.version>
-        <junit.platform.version>1.9.3</junit.platform.version>
+        <junit.jupiter.version>5.8.0-M1</junit.jupiter.version>
+        <junit.platform.version>1.8.0-M1</junit.platform.version>
         <allure-maven.version>2.10.0</allure-maven.version>
         <allure-junit5.version>2.14.0</allure-junit5.version>
         <maven-surefire-plugin.version>3.1.0</maven-surefire-plugin.version>
