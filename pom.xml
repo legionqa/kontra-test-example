@@ -82,9 +82,9 @@
 <!--                            <value>io.qameta.allure.junit5.AllureJunit5</value>-->
 <!--                        </property>-->
                     </properties>
-                    <includes>
-                        <include>**/tests/**.java</include>
-                    </includes>
+<!--                    <includes>-->
+<!--                        <include>**/tests/**.java</include>-->
+<!--                    </includes>-->
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
